@@ -246,7 +246,21 @@ textarea {
 
   .home-hero__cta {
     margin-top: 5rem;
-    text-align: center; }
+    text-align: center; 
+  
+    width: 100%; /* Ensure each CTA takes the full width of the container */
+    text-align: center; /* Center align text within each CTA */
+
+  }
+
+  .home-hero__cta .btn {
+    margin-right: 15px; /* Adjust the value to your desired gap */
+  }
+
+  /* Remove the margin from the last button to avoid extra space */
+  .home-hero__cta .btn:last-child {
+      margin-right: 0;
+  }
 
 .about {
   background: #fafafa; }
@@ -695,3 +709,6 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+    
+
